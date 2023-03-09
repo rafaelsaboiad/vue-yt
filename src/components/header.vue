@@ -1,9 +1,14 @@
 <template>
 <header>
-  <div id="locateText">
-    <span id="iniText" @click="handleClick">INÍCIO</span>
-    <span id="favText" @click="handleClick">FAVORITOS</span>
+  <div id="locateTitle">
+    <span id="gitText" @click="handleClick">GitHub</span>
+    <span id="searchText" @click="handleClick">Search</span>
   </div>
+  <div id="locateText" @click="handleClick">
+    <span id="iniText">INÍCIO</span>
+    <span id="favText">FAVORITOS</span>
+  </div>
+
 </header>
 </template>
 
@@ -19,17 +24,36 @@ export default {
     background-color: var(--color-background-nav);
     height: 84px;
     width: 100%;
-
-    align-items: center;
-    justify-content: flex-end;
-
+    justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Inter', sans-serif;
+    
+    }
+
+  #locateTitle {
+    display: flex;
+    height: 84px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+  }
+
+    #gitText {
+    margin-right: 5px;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    }
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  #searchText {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+  }
 
   #locateText {
     display: flex;
@@ -37,7 +61,14 @@ export default {
     width: 391px;
     justify-content: center;
     align-items: center;
-    
+    float: right;
+    margin-left: auto;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   #iniText {
