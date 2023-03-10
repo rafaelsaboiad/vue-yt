@@ -1,7 +1,6 @@
 :root {
-  --color-background:##FFFFFF;;
+  --color-background:#FFFFFF;;
   --color-background-nav:#D9D9D9;;
-  --color-background-home:#FFFFFF;;
   --color-text-normal:#000000;;
   --color-text-highlight:#FF0000;;
 }
@@ -24,4 +23,11 @@ a{
 
 a:hover{
   opacity: 0.8;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 10px;
 }

@@ -1,10 +1,10 @@
 <template>
 <header>
   <div id="locateTitle">
-    <span id="gitText" @click="handleClick">GitHub</span>
-    <span id="searchText" @click="handleClick">Search</span>
+    <span id="gitText">GitHub</span>
+    <span id="searchText">Search</span>
   </div>
-  <div id="locateText" @click="handleClick">
+  <div id="locateText">
     <span id="iniText">INÍCIO</span>
     <span id="favText">FAVORITOS</span>
   </div>
@@ -26,7 +26,7 @@ export default {
     width: 100%;
     justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+    align-content: center;
     }
 
   #locateTitle {
