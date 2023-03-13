@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <HeaderSection/>
     <homePage/>
 
@@ -16,7 +15,7 @@ export default {
   name: 'App',
   components: {
     HeaderSection,
-    homePage
+    homePage,
   }
 }
 </script>
