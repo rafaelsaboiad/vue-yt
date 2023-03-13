@@ -7,7 +7,7 @@
         <button id="btnUser">Usuário</button>
       </div>
       <div id="searchConfig">
-        <input id="placeH" type="text" placeholder="Buscar...">
+        <input id="inputSearch" type="text" placeholder="Buscar...">
       </div>
   </div>
 </main>
@@ -79,28 +79,25 @@ export default {
     margin-top: 40px;
   }
 
-  #placeH {
-    display: flex;
+  #inputSearch {
+    display: flex; 
     width: 780px;
     height: 71px;
-    background-image: url("@/assets/gitLogo.png"); /*SOCORROOOOO*/
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
     padding-left: 20px;
-    padding-right: 55px; /* adiciona espaço para o ícone */
-    background: #FFFFFF;
+    padding-right: 55px; 
     border: 2px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+
+    background-image: url("../assets/search.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 725px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
 }
-
 </style>
